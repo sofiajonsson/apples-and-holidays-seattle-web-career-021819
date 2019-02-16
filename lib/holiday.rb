@@ -81,23 +81,16 @@ holiday_hash.collect do |season, holiday|
   holiday.collect do |holiday, items|
     if items.include?("BBQ")
       holiday 
-    end 
-  end 
-end.flatten.compact
-
-
-
-
-  holiday_hash.map do |season, holidays|
-    holidays.map do |holiday, items|
-      if items.include?("BBQ")
-        holiday
-      end
-    end
-  end.flatten.compact
+     end 
+   end 
+  end.flatten
+end 
 end
 
-end
+
+
+
+ 
 
 
 
